@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        .topnav .icon {
+          display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          .topnav.responsive {position: relative;}
+          .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+        }
+        </style>        
+</head>
+
+<body>
+    <section>
+
+        <!-- <nav >
+           
+            <a href="#" class="logo">Developer</a>
+            <div class="topnav" id="myTopnav">
+                <ul>
+                   
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services" class="active">Service</a></li>
+                    <li><a href="#about " class="active">About</a></li>
+                    <li><a href="#Contact" class="active">Contact</a></li>
+                    <li><a href="#Goal" class="active">Goal</a></li>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <li> <i class="fa fa-bars"></i></li>
+                    </a>
+                  </div>
+
+                </ul>
+                
+        </nav> -->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#Contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#Goal">Goal</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+  
+        <div class="text-container">
+            <p id="home">Hello</p>
+            <p class="bold" >I'm Muhammad Usman</p>
+            <p>I am junior Developer<br> and Desinger</p>
+            <button class="hire-btn">Hire me</button>
+            <a href="./usman cv.docx" download=""> <button class="down-cv">Download CV</button></a>
+        </div>
+        <img src="./remove.png" class="model" alt="developer pics">
+
+    </section>
+    <div class="about-container">
+        <img src="./remove.png">
+        <div class="about-text">
+            <p id="about">About me</p>
+            <p>Developer and Desinger</p>
+            <p>Hi, Muhammad Usman here. I am currently pursuing my bachelors degree in Computer System Engineering.
+                Currently open for Freelance opportunities and Software Development Internship opportunities as well.
+            </p>
+            <p>I am quick learner and software engineering enthusiast looking forward to put up my skills for any open
+                source network or organization in a challenging and fast pace environment.</p>
+            <a href="mailto:kusman2560@gmail.com"> <button>Hire me</button></a>
+            <a href="./usman cv.docx" download=""> <button>Download Cv</button></a>
+        </div>
+    </div>
+    <div class="services ">
+        <!--text-->
+        <div class="services-text ">
+            <p id="services">Services</p>
+            <p>Qualites Requaid</p>
+            <p>if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my
+                work, if you don&#8217;t i change this until you like if you want make a software for your bussniess
+                conatact me.I make as soon</p>
+        </div>
+        <div class="box-container">
+            <!--1------------->
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">Web Design</p>
+                <p class="details">if you want maake a web Design for your bussniess conatact me.I make as soon as
+                    possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+                <button>Read More</button>
+            </div>
+            <!--2------------->
+            <div class="box-2">
+                <span>2</span>
+                <p class="heading">Web Devoloment</p>
+                <p class="details">Are You Looking for a Full Stack Web Developer Who is Highly Experienced In Web
+                    Technologies Like HTML5, CSS3, Sass, Javascript, Jquery, AJAX, JSON, Node Js, i am here </p>
+                <button>Read More</button>
+            </div>
+            <!--3------------->
+            <div class="box-3">
+                <span>3</span>
+                <p class="heading">Security SEO</p>
+                <p class="details" id="services">I will improve the speed of your website for better SEO, ensure a great
+                    user-experience, and generate more leads.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-me">
+        <p id="Contact">If You Have Any Project In Your Mind ?</p>
+        <a href="tel:03153085245"> <button>Contact me</button></a>
+        <br>
+        <div class="Email-me">
+            <a href="mailto:kusman1560@gamil.com"><button>Email me</button> </a>
+        </div>
+    </div>
+    <footer>
+        <!--heading-->
+        <p id="Goal">Future Goal</p>
+        <!--paragraph-->
+        <p>I want to be a Full stack Senior Software Engineer with a demonstrated history of working in the information
+            technology and services industry Skilled in "Asp.net, .Net Core, JS, Android, PWA,Ionic Framework, Swagger.
+            seeking a new challenge to build novel B2B and B2C products. Always eager to learn and work on new tech
+            stacks.
+        </p>
+        <!--social-->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <!--copyright-->
+        <p class="copyright">Copyright by Goin-To Internet</p>
+    </footer>
+    <!--social-attach-bar-->
+    <div class="social">
+        <a href="https://www.facebook.com/muhammadusman.malik.984786"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+
+</body>
+<!-- <script src="./app.js"></script> -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
+</html>
